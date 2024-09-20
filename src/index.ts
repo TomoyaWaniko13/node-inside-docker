@@ -3,8 +3,9 @@ import express from 'express';
 const app = express();
 
 // 569. Node Server Setup
+// 577. Unnecessary Rebuilds
 app.get('/', (req, res) => {
-  res.send('Hi there');
+  res.send('By there');
 });
 
 // 569. Node Server Setup
