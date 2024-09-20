@@ -1,10 +1,13 @@
 # 570. A Few Planned Errors
+# 572. Base Image Issues
+# 574. Copying Build Files
 
 # specify a base image
-FROM alpine
+FROM node:14-alpine
 
 # Install some dependencies
-RUN npm install
+COPY ./ ./
+RUN npm install -g ts-node typescript
 
 # Default command
 CMD ["npm","start"]
